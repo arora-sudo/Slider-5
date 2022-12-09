@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<title>SLIDER</title>
+<script src="jquery-3.4.1.js"></script>
+<script src="Scroll/jquery.nicescroll.js"></script>
+<style>
+body
+{
+	margin:0;
+	padding:0;
+}
+.main
+{
+	width:100%;
+	height:100%;
+	background-color:#3b5a9d;
+	position:fixed;
+	padding-top:50px;
+}
+.gallery
+{
+	width:845px;
+	height:620px;
+	margin:0 auto;
+	border-radius:3px;
+}
+.image-placement
+{
+	width:845px;
+	height:500px;
+	position:relative;
+	float:left;
+}
+.btnLeft
+{
+	width:23px;
+	position:absolute;
+	left:10px;
+	top:235px;
+}
+.btnRight
+{
+	width:23px;
+	position:absolute;
+	right:10px;
+	top:235px;
+}
+.btnPlay,.btnPause
+{
+	width:12px;
+	position:absolute;
+	top:239px;
+	right:40px;
+}
+.btnPlay
+{
+	display:none;
+}
+.btnExpand
+{
+	width:18px;
+	position:absolute;
+	top:478px;
+	right:6px;
+}
+.thumbnail
+{
+	height:100px;
+	margin-top:15px;
+	float:left;
+	width:845px;
+	overflow:auto;
+	
+	white-space:nowrap;
+}
+.thumbs
+{
+	display:inline-block;
+}
+.thumbs img
+{
+	width:105px;
+	height:73px;
+	border-radius:3px;
+	border:3px solid rgba(0,0,0,0.4);
+}
+.images
+{
+	width:845px;
+	height:500px;
+	border-radius:3px;
+	position:absolute;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="gallery">
+			<div class="image-placement">
+				<div class="image">
+					
+				</div>
+				<img src="images/icons/left.png" class="btnLeft">
+				<img src="images/icons/right.png" class="btnRight">
+				<img src="images/icons/play.png" class="btnPlay">
+				<img src="images/icons/pause.png" class="btnPause">
+				<img src="images/icons/expand.png" class="btnExpand">
+			</div>
+			<div class="thumbnail">
+				<div class="thumbs"><img src="images/thumbs-nail/a.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/b.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/c.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/d.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/e.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/f.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/g.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/h.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/i.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/j.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/k.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/l.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/m.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/n.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/o.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/p.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/q.jpg"></div>
+				<div class="thumbs"><img src="images/thumbs-nail/r.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
